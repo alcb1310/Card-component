@@ -2,12 +2,22 @@
 
 :root {
   --cyan: #05cbe9;
+  --dark-blue: #111d4a;
+  --grey: #e3e3e3;
 }
 
 .card {
   width: 90%;
   margin: 0 auto;
   max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  background: var(--dark-blue);
+  color: var(--grey);
+}
+
+.card-img {
+  flex-basis: 200px;
 }
 
 .card-title,
@@ -27,5 +37,36 @@
 }
 
 .card-btn {
+  font-size: 1.25rem;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-btn {
+  background: var(--cyan);
+  color: var(--dark-blue);
+  text-decoration: none;
+  padding: 0.7rem 2rem;
+  font-size: 1.25rem;
+  text-transform: lowercase;
+  flex-wrap: wrap;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  align-items: flex-end;
+}
+
+.card-read-time {
+  width: 40px;
+  margin: 0;
+  margin-top: 5rem;
+}
+
+.card-read-time > span {
   font-size: 1.25rem;
 }
